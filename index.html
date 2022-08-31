@@ -10,7 +10,7 @@
 <meta name="Language" content="es">
 <!-- Fav Icon -->
 <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'/>
 <!-- Google Fonts -->
 <link href="../css2.css?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -858,13 +858,13 @@
                             <p>Registra tus datos para ponernos en contacto y darte mas detalles para organizar tu evento.</p>
                         </div>
                         <div class="form-inner">
-                            <form method="post" action="sendemail.php" id="contact-form" class="default-form" novalidate="novalidate">
+                            <form name="contact" method="POST" data-netlify="true" class="default-form">
                                 <div class="row clearfix">
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="text" name="username" placeholder="Tu nombre..." required="" aria-required="true">
+                                        <input type="text" name="name" placeholder="Tu nombre..." required="" aria-required="true">
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                        <input type="email" name="email" placeholder="Tu correo electrónico..." required="" aria-required="true">
+                                        <input  type="email" name="email" placeholder="Tu correo electrónico..." required="" aria-required="true">
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                         <textarea name="message" placeholder="Describe tu mensaje..."></textarea>
